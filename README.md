@@ -1,6 +1,6 @@
 # Identification-of-resident
 
-## Validity determination
+## Resident registration number
 ```
 int main()
 {

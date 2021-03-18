@@ -1,5 +1,6 @@
 # Identification-of-resident
 
+## Validity determination
 ```
 int main()
 {
@@ -32,7 +33,7 @@ int main()
 		return 0;
 	}
   ```
-  ## Validity determination
+  ### Gender classification
   ```
 	if (a[6] % 2 == 1)
 	{
@@ -43,14 +44,14 @@ int main()
 		cout << "여" << endl;
 	}
   ```
-  ### Gender classification
+  ### Year of birth
   ```
 	int y = (a[0] - 48) * 10 + (a[1] - '0');
 	y += a[6] <= '2' ? 1900 : 2000;
 	cout << "출생연도 : " << y << endl;
 	cout << "나이 : " << 2021 - y + 1 << endl;
   ```
-  ### Year of birth / Birthplace
+  ### Birthplace
   ```
 	cout << "출생지역 : ";
 	int local = (a[6] - '0') * 10 + a[7] - '0';
